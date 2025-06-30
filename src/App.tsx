@@ -13,6 +13,7 @@ import {
   Menu,
   X
 } from 'lucide-react';
+import Image from '../src/assets/new.jpg'
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -56,6 +57,15 @@ function App() {
               <button onClick={() => scrollToSection('how-it-works')} className="text-gray-300 hover:text-green-400 transition-colors">
                 How it Works
               </button>
+              <img 
+                src={Image} 
+                style={{ 
+                  height: "43px", 
+                  width: "44px", 
+                  borderRadius: "102px" 
+                }} 
+                alt="" 
+              />
             </nav>
 
             {/* Mobile Menu Button */}
